@@ -7,8 +7,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
 	<title>
-					2 results for &quot;nước ngọt&quot; - 
-				Search the Google Knowledge Graph
+				Tìm kiếm Mạng ngữ nghĩa
 	</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,12 +20,357 @@
 	<meta name="theme-color" content="#ffffff">
 
 	<!-- Stylesheets -->
-	<link rel="stylesheet" href="https://knowledgegraphsearch.com/assets/bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,800" rel="stylesheet">
 	<link rel="stylesheet" href="https://knowledgegraphsearch.com/assets/css/main.css" />
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	
+	<style>
+		body {
+	font-family: 'Montserrat', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing:grayscale;
+	color: #565656;
+	background-color: #FAF4F1;
+}
+
+a {
+	color: #E26755;
+}
+
+a:hover {
+	color: #C44836;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 800;
+	margin-top: 1.5em;
+	margin-bottom: 0.7em;
+}
+
+h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child {
+	margin-top: 0;
+}
+
+li {
+	margin-bottom: 0.5em;
+}
+
+/**
+ * Site Containers (for sticky footer)
+ */
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.top-container {
+	flex-grow: 1;
+}
+
+/**
+ * Components
+ */
+
+.main-header {
+	padding: 45px 0;
+	background-color: #267499;
+	color: white;
+	text-align: center;
 	
+	background-repeat: no-repeat;
+	background-position: -20% center;
+}
+
+.main-footer {
+	padding: 20px 0;
+	text-align: center;
+	background-color: #F6E9E2;
+	font-size: 12px;
+	margin-top: 20px;
+}
+
+.main-footer a {
+	font-weight: 800;
+}
+
+.main-footer__portrait {
+	width: 100px;
+	border-radius: 50%;
+	margin: -72px 0 10px 0;
+	border: 8px solid #FAF4F1;
+	transition: all 200ms ease;
+}
+
+.main-footer__portrait:hover {
+	transform: scale(1.15);
+}
+
+.section {
+	padding: 45px 0;
+}
+
+.button {
+	background-color: #EBEBEB;
+	padding: 5px 10px;
+	cursor: pointer;
+	border-radius: 5px;
+	user-select: none;
+}
+
+.button:hover, .button:focus {
+	background-color: #CBCBCB;
+}
+
+.button:active {
+	color: white;
+}
+
+.button--xs {
+	font-size: 10px;
+	padding: 3px 6px;
+}
+
+/**
+ * Header
+ */
+
+.main-title-container {
+	margin-bottom: 39px;
+}
+
+.main-title {
+	font-size: 30px;
+	margin: 0 0 10px 0;
+}
+
+.main-title a {
+	color: white;
+	text-decoration: none;
+}
+
+.main-subtitle {
+	font-size: 14px;
+	font-weight: 400;
+	margin: 10px 0 0 0;
+}
+
+/**
+ * Search Form
+ */
+
+.main-search__search-section {
+	display: flex;
+	margin-bottom: 20px;
+}
+
+.main-search__search-input {
+	font-size: 18px;
+	padding: 10px 15px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border: none;
+	flex-grow: 1;
+	color: #565656;
+}
+
+.main-search__submit {
+	border: none;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	padding-left: 30px;
+	padding-right: 30px;
+	background-color: #E26755;
+	font-weight: 800;
+	font-size: 18px;
+}
+
+.main-search__submit:hover, .main-search__submit:active, .main-search__submit:focus {
+	background-color: #C44836;
+}
+
+.main-search__option {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAAAXNSR0IArs4c6QAAAClJREFUCB1j+P//fwMQEwINDCAAVIVPMUQRWCVuxaiKcCjGrghNMYYiAK5JcpNjiE+eAAAAAElFTkSuQmCC');
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-color: black;
+	border: none;
+	border-radius: 0;
+	border-bottom: 2px solid white;
+	padding-right: 15px;
+	padding-bottom: 5px;
+	margin-right: 20px;
+}
+
+.main-search__option:last-child {
+	margin-right: 0;
+}
+
+/**
+ * Search Results
+ */
+
+.search-results-info {
+	padding: 30px;
+	background-color: #F6E9E2;
+	text-align: center;
+}
+
+.search-results-info__title {
+	font-size: 30px;
+	margin: 0;
+	margin-bottom: 7px;
+}
+
+.entity-card {
+	background-color: white;
+	padding: 20px;
+	margin-bottom: 30px;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.entity-card:last-child {
+	margin-bottom: 0;
+}
+
+.entity-card__section {
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+	border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+.entity-card__section:last-child {
+	padding-bottom: 0;
+	border-bottom: 0;
+	margin-bottom: 0;
+}
+
+.entity-card__header-section {
+	display: flex;
+}
+
+.entity-card__name {
+	margin: 0 10px 0 0;
+	flex-grow: 1;
+}
+
+.entity-card__result-score{
+	flex-shrink: 0;
+}
+
+.entity-card__heading {
+	text-transform: uppercase;
+	color: #A8A8A8;
+	letter-spacing: 1px;
+	font-size: 14px;
+}
+
+.entity-card__heading {
+	margin-bottom: 10px;
+}
+
+.entity-card__key {
+	display: inline-block;
+	font-weight: 800;
+}
+
+.entity-card__value {
+	display: inline-block;
+}
+
+.entity-card__item {
+	margin-bottom: 5px;
+}
+
+.copy-id-button {
+	margin-left: 3px;
+}
+
+.entity-card__image-section {
+	display: flex;
+	overflow: hidden;
+}
+
+.entity-card__image {
+	margin-right: 15px;
+}
+
+.entity-card__img {
+	max-width: 150px;
+}
+
+.entity-card__overflow-ellipsis {
+	width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+/**
+ * Media Queries
+ */
+
+ @media screen and (max-width: 480px) {
+
+	.section {
+		padding: 30px 0;
+	}
+
+	.main-title {
+		font-size: 22px;
+	}
+
+	.main-search__search-input {
+		width: 100px;
+		font-size: 16px;
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+
+	.main-search__submit {
+		font-size: 16px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.main-search__option {
+		width: 100%;
+		margin-bottom: 10px;
+		background-position: 97% center;
+	}
+
+	.search-results-info__title {
+		font-size: 22px;
+	}
+
+	.search-results {
+		padding: 15px 0 60px 0;
+	}
+
+	.entity-card {
+		margin-bottom: 15px;
+	}
+
+	.entity-card__header-section {
+		display: block;
+	}
+
+	.entity-card__name {
+		font-size: 22px;
+		margin-bottom: 10px;
+	}
+
+	.entity-card__img {
+		max-width: 75px;
+	}
+
+ }
+	</style>
 </head>
 
 <body>
@@ -53,13 +397,13 @@
 
 						</div><!-- /.main-title-container -->
 
-						<form action="/search" method="get" class="main-search">
+						<div class="main-search">
 
 							<div class="main-search__search-section">
 
-								<input type="text" name="term" value="nước ngọt" class="main-search__search-input" placeholder="từ khóa">
+								<input type="text" name="term" value="apple" class="main-search__search-input" placeholder="từ khóa">
 
-								<button class="main-search__submit" type="submit">Tìm</button>
+								<button id="timdi" class="main-search__submit">Tìm</button>
 
 							</div><!-- /.main-search__search-section -->
 
@@ -71,7 +415,7 @@
 										<option value="">All types</option>
 
 										
-																							<option value="Thing">Thing</option>
+																							<option value="Thing" selected>Thing</option>
 											
 										
 																							<option value="Person">Person</option>
@@ -86,7 +430,7 @@
 																							<option value="Place">Place</option>
 											
 										
-																							<option value="Product" selected >Product</option>
+																							<option value="Product">Product</option>
 											
 										
 																							<option value="Event">Event</option>
@@ -673,7 +1017,7 @@
 								
 							</div><!-- /.main-search__options -->
 
-						</form>
+						</div>
 
 					</div>
 
@@ -687,7 +1031,7 @@
 			
 	<div class="search-results-info">
 
-		<div class="container">
+		<div style="display: none;" class="container">
 
 			<h2 class="search-results-info__title">
 				2 search results for &ldquo;nước ngọt&rdquo;:
@@ -705,350 +1049,11 @@
 
 			<div class="row">
 
-				<div class="col-md-8 col-md-offset-2">
+				<div id="entity-card-container" class="col-md-8 col-md-offset-2">
 
 					
 						
-							<div class="entity-card">
-
-								<div class="entity-card__section entity-card__header-section">
-
-									<h3 class="entity-card__name">
-										Coca-Cola
-									</h3><!-- /.entity-card__name -->
-
-									<div class="entity-card__result-score">
-
-										<span class="entity-card__key">
-											Score: 
-										</span><!-- /.entity-card__key -->
-
-										<span class="entity-card__value">
-											0
-										</span><!-- /.entity-card__value -->
-
-									</div><!-- /.entity-card__result-score -->
-
-								</div><!-- /.entity-card__header -->
-
-								<div class="entity-card__section">
-
-									
-										<div class="entity-card__item">
-
-											<div class="entity-card__key">
-												Description:
-											</div>
-
-											<div class="entity-card__value">
-												Nước ngọt có ga
-											</div>
-
-										</div>
-
-									
-									
-										<div class="entity-card__item">
-
-											<div class="entity-card__key">
-												Types:
-											</div>
-
-											<div class="entity-card__value">
-												Product, Thing
-											</div>
-
-										</div>
-
-									
-									
-										<div class="entity-card__item">
-
-											<div class="entity-card__key">
-												URL:
-											</div>
-
-											<div class="entity-card__value">
-												<a target="_blank" href="http://www.coca-cola.it/">http://www.coca-cola.it/</a>
-											</div>
-
-										</div>
-
-									
-									
-										<div class="entity-card__item">
-
-											<div class="entity-card__key">
-												Knowledge Panel Preview:
-											</div>
-
-											<div class="entity-card__value">
-												<a target="_blank" href="https://g.co/kg/m/01yvs">Link</a>
-											</div>
-
-										</div>
-
-									
-									
-										<div class="entity-card__item">
-
-											<div class="entity-card__key">
-												ID:
-											</div>
-
-											<div class="entity-card__value">
-												<span style="font-family: monospace">
-													kg:/m/01yvs
-												</span>
-												<span class="button button--xs copy-id-button" data-clipboard-text="kg:/m/01yvs">
-													Copy to clipboard
-												</span>
-											</div>
-
-										</div>
-
-									
-								</div><!-- /.entity-card__body -->
-
-								
-									<div class="entity-card__section">
-
-										<div class="entity-card__heading">
-											Detailed Description
-										</div><!-- /.entity-card__key -->
-
-										<div class="entity-card__value">
-
-											Coca-Cola là một thương hiệu nước ngọt có ga chứa nước cacbon điôxít bão hòa được sản xuất bởi Công ty Coca-Cola. Coca-Cola ban đầu được điều chế bởi dược sĩ John Pemberton vào cuối thế kỷ XIX với mục đích trở thành một loại biệt dược. 
-
-											
-												(<a target="_blank" href="https://vi.wikipedia.org/wiki/Coca-Cola">Link</a>, <a target="_blank" href="https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">License Details</a>)
-
-											
-										</div><!-- /.entity-card__value -->
-
-									</div>
-
-								
-								
-									<div class="entity-card__section">
-
-										<div class="entity-card__heading">
-											Image Information
-										</div>
-
-										<div class="entity-card__image-section">
-
-											<div class="entity-card__image">
-
-												<a target="_blank" href="https://commons.wikimedia.org/wiki/File:Coca-Cola_bottle_cap.svg">
-													<img src="https://t3.gstatic.com/images?q=tbn:ANd9GcRChIMKaCyLHO80jFCH7_ZtG5Dkz_nhxXDaYzBkRK6aS9j0BPEq" alt="Image for Coca-Cola" class="entity-card__img">
-												</a>
-
-											</div>
-
-											<div class="entity-card__image-info">
-
-												<div class="entity-card__item">
-													<div class="entity-card__key">
-														Media: 
-													</div>
-													<div class="entity-card__value">
-														<a target="_blank" href="https://t3.gstatic.com/images?q=tbn:ANd9GcRChIMKaCyLHO80jFCH7_ZtG5Dkz_nhxXDaYzBkRK6aS9j0BPEq">Link</a>
-													</div>
-												</div>
-
-												<div class="entity-card__item">
-													<div class="entity-card__key">
-														Source: 
-													</div>
-													<div class="entity-card__value">
-														<a target="_blank" href="https://commons.wikimedia.org/wiki/File:Coca-Cola_bottle_cap.svg">Link</a>
-													</div>
-												</div>
-
-												<div class="entity-card__item">
-													<div class="entity-card__key">
-														License: 
-													</div>
-													<div class="entity-card__value">
-														<a target="_blank" href="">Link</a>
-													</div>
-												</div>
-
-											</div>
-
-										</div>
-
-									</div>
-
-								
-							</div><!-- /.entity-card -->
-
-						
-							<div class="entity-card">
-
-								<div class="entity-card__section entity-card__header-section">
-
-									<h3 class="entity-card__name">
-										Chutney
-									</h3><!-- /.entity-card__name -->
-
-									<div class="entity-card__result-score">
-
-										<span class="entity-card__key">
-											Score: 
-										</span><!-- /.entity-card__key -->
-
-										<span class="entity-card__value">
-											0
-										</span><!-- /.entity-card__value -->
-
-									</div><!-- /.entity-card__result-score -->
-
-								</div><!-- /.entity-card__header -->
-
-								<div class="entity-card__section">
-
-									
-										<div class="entity-card__item">
-
-											<div class="entity-card__key">
-												Description:
-											</div>
-
-											<div class="entity-card__value">
-												Thực phẩm
-											</div>
-
-										</div>
-
-									
-									
-										<div class="entity-card__item">
-
-											<div class="entity-card__key">
-												Types:
-											</div>
-
-											<div class="entity-card__value">
-												Product, Thing
-											</div>
-
-										</div>
-
-									
-									
-									
-										<div class="entity-card__item">
-
-											<div class="entity-card__key">
-												Knowledge Panel Preview:
-											</div>
-
-											<div class="entity-card__value">
-												<a target="_blank" href="https://g.co/kg/m/01bgd_">Link</a>
-											</div>
-
-										</div>
-
-									
-									
-										<div class="entity-card__item">
-
-											<div class="entity-card__key">
-												ID:
-											</div>
-
-											<div class="entity-card__value">
-												<span style="font-family: monospace">
-													kg:/m/01bgd_
-												</span>
-												<span class="button button--xs copy-id-button" data-clipboard-text="kg:/m/01bgd_">
-													Copy to clipboard
-												</span>
-											</div>
-
-										</div>
-
-									
-								</div><!-- /.entity-card__body -->
-
-								
-									<div class="entity-card__section">
-
-										<div class="entity-card__heading">
-											Detailed Description
-										</div><!-- /.entity-card__key -->
-
-										<div class="entity-card__value">
-
-											Chutney là một món ăn truyền thống của nền ẩm thực Nam Á, thường bao gồm các loại rau củ, gia vị, và/hoặc hoa quả trộn lẫn với nhau. Chutney rất đa dạng về thành phần cũng như công thức chế biến.
-Chutneys có dạng khô hoặc ướt, và từ các thành phần thô có thế trộn lẫn để được món hoàn chỉnh. 
-
-											
-												(<a target="_blank" href="https://vi.wikipedia.org/wiki/Chutney">Link</a>, <a target="_blank" href="https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">License Details</a>)
-
-											
-										</div><!-- /.entity-card__value -->
-
-									</div>
-
-								
-								
-									<div class="entity-card__section">
-
-										<div class="entity-card__heading">
-											Image Information
-										</div>
-
-										<div class="entity-card__image-section">
-
-											<div class="entity-card__image">
-
-												<a target="_blank" href="https://ml.wikipedia.org/wiki/%E0%B4%AA%E0%B5%8D%E0%B4%B0%E0%B4%AE%E0%B4%BE%E0%B4%A3%E0%B4%82:Pudina_Chutney.jpg">
-													<img src="https://t3.gstatic.com/images?q=tbn:ANd9GcSn2PPDNRKYG3mymhb5L7FQrYEmNdzVjmfCrEXnOi1QvV3aeyq3" alt="Image for Chutney" class="entity-card__img">
-												</a>
-
-											</div>
-
-											<div class="entity-card__image-info">
-
-												<div class="entity-card__item">
-													<div class="entity-card__key">
-														Media: 
-													</div>
-													<div class="entity-card__value">
-														<a target="_blank" href="https://t3.gstatic.com/images?q=tbn:ANd9GcSn2PPDNRKYG3mymhb5L7FQrYEmNdzVjmfCrEXnOi1QvV3aeyq3">Link</a>
-													</div>
-												</div>
-
-												<div class="entity-card__item">
-													<div class="entity-card__key">
-														Source: 
-													</div>
-													<div class="entity-card__value">
-														<a target="_blank" href="https://ml.wikipedia.org/wiki/%E0%B4%AA%E0%B5%8D%E0%B4%B0%E0%B4%AE%E0%B4%BE%E0%B4%A3%E0%B4%82:Pudina_Chutney.jpg">Link</a>
-													</div>
-												</div>
-
-												<div class="entity-card__item">
-													<div class="entity-card__key">
-														License: 
-													</div>
-													<div class="entity-card__value">
-														<a target="_blank" href="">Link</a>
-													</div>
-												</div>
-
-											</div>
-
-										</div>
-
-									</div>
-
-								
-							</div><!-- /.entity-card -->
+							
 
 						
 					
@@ -1079,25 +1084,7 @@ Chutneys có dạng khô hoặc ướt, và từ các thành phần thô có th�
 
 	<!-- Scripts -->
 	
-	<script>
-		$(document).ready(function(){
-
-    var service_url = 'https://kgsearch.googleapis.com/v1/entities:search';
-  	var params = {
-    'query': 'Obama',
-    'limit': 10,
-    'indent': true,
-    'key' : 'AIzaSyAx70pKho_O8IGCTYjpZcIvom0K9LFoSUU',
-    'languages' : 'vi'
-  };
-  $.getJSON(service_url + '?callback=?', params, function(response) {
-    $.each(response.itemListElement, function(i, element) {
-      $('<div>', {text:element['result']['name']}).appendTo(document.body);
-    });
-  });
-
-}); 
-	</script>
+	<script src="script.js"></script>
 
 </body>
 
