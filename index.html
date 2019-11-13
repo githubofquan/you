@@ -3,7 +3,7 @@
     <script type='text/javascript' src='https://www.gstatic.com/charts/loader.js'></script>
     <script type='text/javascript'>
      google.charts.load('current', {
-       'packages': ['geochart'],
+       'packages': ['geochart','table'],
        // Note: you will need to get a mapsApiKey for your project.
        // See: https://developers.google.com/chart/interactive/docs/basic_load_libs#load-settings
        'mapsApiKey': 'AIzaSyB_7YDfJPnEHyPkXhjMQvXnBRXB-TQO6ZM'
@@ -15,16 +15,16 @@
       function drawMarkersMap() {
       var data = google.visualization.arrayToDataTable([
         ['Provinces', 'value'],
-          [{v: 'VN-44', f: 'An Giang'}, 200],
-[{v: 'VN-43', f: 'Bà Rịa - Vũng Tàu'}, 201],
-[{v: 'VN-54', f: 'Bắc Giang'}, 200],
+          [{v: 'VN-44', f: 'An Giang'}, 202],
+[{v: 'VN-43', f: 'Bà Rịa - Vũng Tàu'}, 205],
+[{v: 'VN-54', f: 'Bắc Giang'}, 203],
 [{v: 'VN-53', f: 'Bắc Kạn'}, 201],
-[{v: 'VN-55', f: 'Bạc Liêu'}, 200],
-[{v: 'VN-56', f: 'Bắc Ninh'}, 201],
-[{v: 'VN-50', f: 'Bến Tre'}, 200],
-[{v: 'VN-31', f: 'Bình Định'}, 201],
-[{v: 'VN-57', f: 'Bình Dương'}, 200],
-[{v: 'VN-58', f: 'Bình Phước'}, 201],
+[{v: 'VN-55', f: 'Bạc Liêu'}, 203],
+[{v: 'VN-56', f: 'Bắc Ninh'}, 206],
+[{v: 'VN-50', f: 'Bến Tre'}, 207],
+[{v: 'VN-31', f: 'Bình Định'}, 208],
+[{v: 'VN-57', f: 'Bình Dương'}, 209],
+[{v: 'VN-58', f: 'Bình Phước'}, 271],
 [{v: 'VN-40', f: 'Bình Thuận'}, 200],
 [{v: 'VN-59', f: 'Cà Mau'}, 201],
 [{v: 'VN-04', f: 'Cao Bằng'}, 200],
@@ -89,8 +89,13 @@ console.log(data);
 		
       };
 
-      var chart = new google.visualization.GeoChart(document.getElementById('chart_div'));
+      //var chart = new google.visualization.GeoChart(document.getElementById('chart_div'));
+	  var chart = new google.visualization.GeoChart(document.getElementById('geochart-colors'));
+        var table = new google.visualization.Table(document.getElementById('table_div'));
       chart.draw(data, options);
+	  table.draw(data, {
+        width: '100%', height: '100%'
+    });
 	  google.visualization.events.addListener(chart, 'select', selectHandler);
 
 function selectHandler() {
@@ -121,6 +126,9 @@ function selectHandler() {
     </script>
   </head>
   <body>
-    <div id="chart_div" style="width: 900px; height: 500px;"></div>
+    
+	<div id="geochart-colors" style="width: 100%; height: 100%;"></div>
+<p>data</p>
+<div id="table_div" style="height:110%;width:300px;"></div>
   </body>
 </html>
