@@ -9,8 +9,7 @@
        'mapsApiKey': 'AIzaSyB_7YDfJPnEHyPkXhjMQvXnBRXB-TQO6ZM'
      });
      google.charts.setOnLoadCallback(drawMarkersMap);
-//https://en.wikipedia.org/wiki/ISO_3166-2:VN
-//https://stackoverflow.com/questions/40747090/color-provinces-in-my-country-with-google-charts-geocharts
+
 
       function drawMarkersMap() {
       var data = google.visualization.arrayToDataTable([
@@ -29,7 +28,7 @@
 [{v: 'VN-59', f: 'Cà Mau'}, 201],
 [{v: 'VN-04', f: 'Cao Bằng'}, 200],
 [{v: 'VN-33', f: 'Đắk Lắk'}, 201],
-[{v: 'VN-72', f: 'Đắk Nông'}, 200],
+[{v: 'VN-72', f: 'Đắk Nông'}, 250],
 [{v: 'VN-71', f: 'Điện Biên'}, 201],
 [{v: 'VN-39', f: 'Đồng Nai'}, 200],
 [{v: 'VN-45', f: 'Đồng Tháp'}, 201],
@@ -37,7 +36,7 @@
 [{v: 'VN-03', f: 'Hà Giang'}, 201],
 [{v: 'VN-63', f: 'Hà Nam'}, 200],
 [{v: 'VN-23', f: 'Hà Tĩnh'}, 201],
-[{v: 'VN-61', f: 'Hải Dương'}, 200],
+[{v: 'VN-61', f: 'Hải Dương'}, 220],
 [{v: 'VN-73', f: 'Hậu Giang'}, 201],
 [{v: 'VN-14', f: 'Hòa Bình'}, 200],
 [{v: 'VN-66', f: 'Hưng Yên'}, 201],
@@ -57,7 +56,7 @@
 [{v: 'VN-32', f: 'Phú Yên'}, 201],
 [{v: 'VN-24', f: 'Quảng Bình'}, 200],
 [{v: 'VN-27', f: 'Quảng Nam'}, 201],
-[{v: 'VN-29', f: 'Quảng Ngãi'}, 200],
+[{v: 'VN-29', f: 'Quảng Ngãi'}, 230],
 [{v: 'VN-13', f: 'Quảng Ninh'}, 201],
 [{v: 'VN-25', f: 'Quảng Trị'}, 200],
 [{v: 'VN-52', f: 'Sóc Trăng'}, 201],
@@ -83,7 +82,7 @@ console.log(data);
 
       var options = {
         region: 'VN',
-        displayMode: 'regions',
+        //displayMode: 'regions',
     resolution: 'provinces',
         colorAxis: {colors: ['green', 'blue']},
 		
